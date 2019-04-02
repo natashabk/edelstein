@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
+      
+.App {
+  text-align: center;
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 30px;
+  padding-top: 75px;
+  &#home{
+    background-image: url('https://images.unsplash.com/photo-1461468611824-46457c0e11fd');
+    padding: 0px;
+  }
+  &#welcome{
+    background-image: url('https://images.unsplash.com/19/waves.JPG');
+  }
+  &#booking{
+    background-image: url('https://images.unsplash.com/photo-1488702953093-ac0820558db2');
+  }
+  &#about{
+    background-image: url('https://images.unsplash.com/reserve/O7A9fAvYSXC7NTdz8gLQ_IMGP1039.jpg');
+  }
+}
+// HOME TITLE
+#homeTitle {
+  padding-top: 280px;
+  h1{
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    margin: 0px;
+  }
+}
+// HOME BUTTONS
+.homeBtn {
+  border-radius: 10px;
+  padding: 12px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 19px;
+  margin: 10px;
+  min-width: 10em;
+  outline: none;
+  &:hover{
+    background-color: #fff;
+    color: #bdbaba;
+  }
+  &#topHomeBtn{
+    margin-top: 65px;
+  }
+}
+
+// WELCOME
+#overlay{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 85%;
+  margin: auto;
+  min-height: 42em;
+  padding: 10px;
+  color: #353535;
+}
+
+#welcomeTitle{
+  margin-top: 18px;
+}
+
+// ABOUT
+#headshot{
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  img{
+    max-height: 200px;
+  }
+}
+
+// PAGINATION
+.pagination{
+  &Back{
+    border: none;
+    font-size: 20px;
+    margin-top: 340px;
+    margin-right: 665px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}

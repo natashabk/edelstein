@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +8,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  h1{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+  }
 }
 
 code {
