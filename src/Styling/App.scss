@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:300,400');
-      
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
+
 .App {
   text-align: center;
 }
@@ -10,28 +10,52 @@
   min-height: 100vh;
   padding: 30px;
   padding-top: 75px;
-  &#home{
-    background-image: url('https://images.unsplash.com/photo-1461468611824-46457c0e11fd');
+  &#home {
+    background-image: url("https://images.unsplash.com/photo-1461468611824-46457c0e11fd");
     padding: 0px;
   }
-  &#welcome{
-    background-image: url('https://images.unsplash.com/19/waves.JPG');
+  &#welcome {
+    background-image: url("https://images.unsplash.com/19/waves.JPG");
   }
-  &#booking{
-    background-image: url('https://images.unsplash.com/photo-1488702953093-ac0820558db2');
+  &#booking {
+    background-image: url("https://images.unsplash.com/photo-1488702953093-ac0820558db2");
   }
-  &#about{
-    background-image: url('https://images.unsplash.com/reserve/O7A9fAvYSXC7NTdz8gLQ_IMGP1039.jpg');
+  &#about {
+    background-image: url("https://images.unsplash.com/reserve/O7A9fAvYSXC7NTdz8gLQ_IMGP1039.jpg");
   }
-  &#forms{
-    background-image: url('https://images.unsplash.com/photo-1470319149473-af271634cecf');
+  &#forms {
+    background-image: url("https://images.unsplash.com/photo-1470319149473-af271634cecf");
   }
 }
+
+// NAVBAR
+.welcome,
+.about,
+.forms,
+.booking {
+  padding-right: 10px !important;
+  padding-left: 10px;
+}
+
+.bg-light {
+  background-color: #d6d4d4!important;
+  box-shadow: 1px 3px 5px #afaeae;
+  a{
+    color: #fff!important;
+    text-shadow: 1px 1.5px #929191;
+  }
+}
+
+.navbar-light .navbar-brand {
+  text-shadow: 1px 2px #a09e9e;
+  font-size: x-large;
+}
+
 // HOME TITLE
 #homeTitle {
   padding-top: 280px;
-  h1{
-    font-family: 'Rubik', sans-serif;
+  h1 {
+    font-family: "Rubik", sans-serif;
     color: #fff;
     margin: 0px;
   }
@@ -53,17 +77,17 @@
   outline: none;
   display: flex;
   flex-direction: column;
-  &:hover{
+  &:hover {
     background-color: #fff;
     color: #bdbaba !important;
   }
-  &#topHomeBtn{
+  &#topHomeBtn {
     margin-top: 65px;
   }
 }
 
 // WELCOME
-#overlay{
+#overlay {
   background-color: rgba(255, 255, 255, 0.5);
   width: 85%;
   margin: auto;
@@ -72,23 +96,47 @@
   color: #353535;
 }
 
-#welcomeTitle{
-  margin-top: 18px;
+#welcomeTitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#welcomeText {
+  overflow: scroll;
+  height: 650px;
+}
+
+#specialities,
+#whoISee,
+#intro {
+  text-align: left;
+  height: 650px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// SPECIALIITIES
+
+ul {
+  list-style: none;
+}
+strong {
+  line-height: 40px;
 }
 
 // ABOUT
-#headshot{
+#headshot {
   text-align: left;
   margin-left: 30px;
   margin-top: 30px;
-  img{
+  img {
     max-height: 200px;
   }
 }
-
 // PAGINATION
-.pagination{
-  &Back{
+.pagination {
+  &Back {
     border: none;
     font-size: 20px;
     margin-top: 340px;
@@ -99,11 +147,7 @@
   }
 }
 
-// NAVBAR 
-.welcome, .about, .forms, .booking{
-    padding-right: 10px !important;
-    padding-left:10px;
-  }
+
 
 // more pictures
 // https://images.unsplash.com/photo-1470319149473-af271634cecf

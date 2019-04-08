@@ -22,10 +22,8 @@ class App extends Component {
 
   componentDidMount() {
     Events.scrollEvent.register("begin", function() {
-      // console.log("begin", arguments);
     });
     Events.scrollEvent.register("end", function() {
-      // console.log("end", arguments);
     });
   }
   scrollToTop() {
@@ -38,14 +36,14 @@ class App extends Component {
       smooth: "easeInOutQuart"
     });
   }
-  scrollToWithContainer() {
+  scrollToWithContainer(id) {
     let goToContainer = new Promise((resolve, reject) => {
       Events.scrollEvent.register("end", () => {
         resolve();
         Events.scrollEvent.remove("end");
       });
 
-      scroller.scrollTo("scroll-container", {
+      scroller.scrollTo("welcome", {
         duration: 800,
         delay: 0,
         smooth: "easeInOutQuart"
@@ -53,14 +51,15 @@ class App extends Component {
     });
 
     goToContainer.then(() =>
-      scroller.scrollTo("scroll-container-second-element", {
-        duration: 800,
+      scroller.scrollTo(id, {
+        duration: 200,
         delay: 0,
         smooth: "easeInOutQuart",
-        containerId: "scroll-container"
+        containerId: "welcomeText"
       })
     );
   }
+
   componentWillUnmount() {
     Events.scrollEvent.remove("begin");
     Events.scrollEvent.remove("end");
@@ -70,7 +69,7 @@ class App extends Component {
     return (
       <div className="App">
         <Home />
-       <NavBar />
+        <NavBar scrollToWithContainer={this.scrollToWithContainer}/>
         <Element name="welcome" className="element">
           <Welcome />
         </Element>
