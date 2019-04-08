@@ -36,6 +36,7 @@
     margin: 0px;
   }
 }
+
 // HOME BUTTONS
 .homeBtn {
   border-radius: 10px;
@@ -45,8 +46,13 @@
   color: #fff;
   font-size: 19px;
   margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
   min-width: 10em;
   outline: none;
+  display: flex;
+  flex-direction: column;
   &:hover{
     background-color: #fff;
     color: #bdbaba;

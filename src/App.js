@@ -5,6 +5,7 @@ import Booking from "./Booking.js";
 import About from "./About.js";
 import Forms from "./Forms.js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import {
   Link,
   DirectLink,
@@ -22,7 +23,7 @@ class App extends Component {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
   }
-
+  
   componentDidMount() {
     Events.scrollEvent.register("begin", function() {
       console.log("begin", arguments);
@@ -72,186 +73,70 @@ class App extends Component {
   render() {
     return (
       <div class="App">
-        <Home/>
-        <nav className="navbar navbar-default navbar-fixed-top">
-          <div className="container-fluid">
-            <div
-              className="collapse navbar-collapse"
-              id="bs-example-navbar-collapse-1"
-            >
-              <ul className="nav navbar-nav">
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test1"
-                    to="test1"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                  >
-                    Welcome
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test2"
-                    to="test2"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                  >
-                    About Me
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test3"
-                    to="test3"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                  >
-                    Forms
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test4"
-                    to="test4"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                  >
-                    Booking
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test8"
-                    to="same"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                  >
-                    Same target
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    activeClass="active"
-                    className="test9"
-                    to="same"
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                  >
-                    Same target
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    className="test1"
-                    to="test1"
-                    onClick={() => this.scrollTo()}
-                  >
-                    Scroll to element
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="test1"
-                    to="test1"
-                    onClick={() => this.scrollToWithContainer()}
-                  >
-                    Scroll to element within container
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <Home />
+        <Navbar bg="light" expand="lg" sticky="top">
+          <Navbar.Brand href="#home">Susan Edelstein</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Link
+                activeClass="active"
+                className="welcome"
+                to="welcome"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
+                Welcome
+              </Link>
 
-        <Element name="test1" className="element">
+              <Link
+                activeClass="active"
+                className="about"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
+                About Me
+              </Link>
+
+              <Link
+                activeClass="active"
+                className="forms"
+                to="forms"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
+                Forms
+              </Link>
+
+              <Link
+                activeClass="active"
+                className="booking"
+                to="booking"
+                spy={true}
+                smooth={true}
+                duration={800}
+              >
+                Booking
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <Element name="welcome" className="element">
           <Welcome />
         </Element>
-
-        <Element name="test2" className="element">
+        <Element name="about" className="element">
           <About />
         </Element>
-
-        <Element name="test3" className="element">
+        <Element name="forms" className="element">
           <Forms />
         </Element>
-
-        <Element name="test4" className="element">
+        <Element name="booking" className="element">
           <Booking />
         </Element>
-        <Link
-          activeClass="active"
-          to="firstInsideContainer"
-          spy={true}
-          smooth={true}
-          duration={250}
-          containerId="containerElement"
-          style={{ display: "inline-block", margin: "20px" }}
-        >
-          Go to first element inside container
-        </Link>
-
-        <Link
-          activeClass="active"
-          to="secondInsideContainer"
-          spy={true}
-          smooth={true}
-          duration={250}
-          containerId="containerElement"
-          style={{ display: "inline-block", margin: "20px" }}
-        >
-          Go to second element inside container
-        </Link>
-
-        <Element
-          name="test7"
-          className="element"
-          id="containerElement"
-          style={{
-            position: "relative",
-            height: "200px",
-            overflow: "scroll",
-            marginBottom: "100px"
-          }}
-        >
-          <Element
-            name="firstInsideContainer"
-            style={{
-              marginBottom: "200px"
-            }}
-          >
-            first element inside container
-          </Element>
-
-          <Element
-            name="secondInsideContainer"
-            style={{
-              marginBottom: "200px"
-            }}
-          >
-            second element inside container
-          </Element>
-        </Element>
-
-        <Element id="same" className="element">
-          Two links point to this
-        </Element>
-
-        <Element name="scroll-to-element" className="element">
-          Scroll to element
-        </Element>
-
         <Element
           className="element"
           id="scroll-container"
@@ -280,7 +165,6 @@ class App extends Component {
             second element inside container
           </Element>
         </Element>
-
         <a onClick={this.scrollToTop}>To the top!</a>
       </div>
     );
