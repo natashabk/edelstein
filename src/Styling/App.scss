@@ -39,11 +39,11 @@
 
 // HOME BUTTONS
 .homeBtn {
+  color: #fff !important;
   border-radius: 10px;
   padding: 12px;
   border: 2px solid #fff;
   background-color: transparent;
-  color: #fff;
   font-size: 19px;
   margin: 10px;
   margin-left: auto;
@@ -55,7 +55,7 @@
   flex-direction: column;
   &:hover{
     background-color: #fff;
-    color: #bdbaba;
+    color: #bdbaba !important;
   }
   &#topHomeBtn{
     margin-top: 65px;
@@ -98,6 +98,12 @@
     border-radius: 10px;
   }
 }
+
+// NAVBAR 
+.welcome, .about, .forms, .booking{
+    padding-right: 10px !important;
+    padding-left:10px;
+  }
 
 // more pictures
 // https://images.unsplash.com/photo-1470319149473-af271634cecf
