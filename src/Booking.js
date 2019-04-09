@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import GoogleMapReact from 'google-map-react';
 import { longStackSupport } from "q";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const API_KEY = `${process.env.REACT_APP_GOOGLE_API_KEY}`;
 
 export default class Booking extends Component {
   static defaultProps = {
@@ -23,7 +24,7 @@ export default class Booking extends Component {
             <Col>
             <div className="mapWrapper">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyB6uDrK71HKJCGO7iPZDUj6BBns9CSOV_0' }}
+          bootstrapURLKeys={{ key: API_KEY }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
