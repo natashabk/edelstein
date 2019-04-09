@@ -11,6 +11,9 @@ export default class Home extends Component {
               <h1 id="welcomeTitle">
                 How do you know when it's time to ask for help?
               </h1>
+              <Row id="officeRow">
+              <img src="https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2018/10/GettyImages-814596806.jpg" alt="couch-placeholder" id="officeImg"/>
+              </Row>
               <p>
                 {" "}
                 At times, things may seem so overwhelming that we despair of

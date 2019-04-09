@@ -6,9 +6,9 @@ export default class NavBar extends Component {
   render() {
     return (
       <Navbar bg="light" expand="sm" sticky="top">
-        <Navbar.Brand href="#home">Susan Edelstein, PhD</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Brand href="#">Susan Edelstein, PhD</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Link
               className="welcome"
@@ -25,19 +25,12 @@ export default class NavBar extends Component {
               Specialties
             </Link>
             <Link
-              className="welcome"
-              to="welcome"
-              onClick={() => this.props.scrollToWithContainer("whoISee")}
-            >
-              Who I See
-            </Link>
-            <Link
               activeClass="active"
               className="about"
               to="about"
               spy={true}
               smooth={true}
-              duration={800}
+              duration={500}
             >
               About Me
             </Link>
@@ -47,7 +40,7 @@ export default class NavBar extends Component {
               to="forms"
               spy={true}
               smooth={true}
-              duration={800}
+              duration={500}
             >
               Forms & Payment
             </Link>
@@ -57,32 +50,10 @@ export default class NavBar extends Component {
               to="booking"
               spy={true}
               smooth={true}
-              duration={800}
+              duration={500}
             >
               Booking
             </Link>
-
-            {/* <Link
-              activeClass="active"
-              to="firstInsideContainer"
-              spy={true}
-              smooth={true}
-              duration={800}
-              containerId="containerElement"
-            >
-              Specialties
-            </Link>
-
-            <Link
-              activeClass="active"
-              to="secondInsideContainer"
-              spy={true}
-              smooth={true}
-              duration={800}
-              containerId="containerElement"
-            >
-              Who I See
-            </Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

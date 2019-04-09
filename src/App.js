@@ -31,7 +31,7 @@ class App extends Component {
   }
   scrollTo() {
     scroller.scrollTo("scroll-to-element", {
-      duration: 800,
+      duration: 500,
       delay: 0,
       smooth: "easeInOutQuart"
     });
@@ -44,7 +44,7 @@ class App extends Component {
       });
 
       scroller.scrollTo("welcome", {
-        duration: 800,
+        duration: 500,
         delay: 0,
         smooth: "easeInOutQuart"
       });
@@ -52,7 +52,7 @@ class App extends Component {
 
     goToContainer.then(() =>
       scroller.scrollTo(id, {
-        duration: 200,
+        duration: 300,
         delay: 0,
         smooth: "easeInOutQuart",
         containerId: "welcomeText"

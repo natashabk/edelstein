@@ -10,11 +10,13 @@ export default class About extends Component {
               src="http://thenewtemperament.com/images/nt_drsue-photo.jpg"
               alt="placeholder"
             />
+            <ul id="aboutList">
+              <li><strong>PhD</strong>{" "}The Wright Institute, 1992</li>
+              <li><strong>MA</strong>{" "}Wright Institute, 1990</li>
+              <li><strong>BA</strong>{" "}Antioch University, 1984</li>
+              <li><strong>License</strong>{" "}#PSY14535</li>
+              </ul>
           </div>
-          <p>
-            PhD The Wright Institute 1992 MA Wright Institute. 1990 BA. Antioch
-            University 1984
-          </p>
           <p>
             {" "}
             With almost thirty years of experience working as a psychologist, I
@@ -26,14 +28,10 @@ export default class About extends Component {
           </p>
           <p>
             {" "}
-            In my practice, I meet with women and men, couples and families of
-            diverse backgrounds and experience who are coping with difficulties
-            in their relationships, family demands, conflicts with their
-            children and workplace stress.
-          </p>
-          <p>
-            I have many years of experience helping couples, both gay and
-            straight, who are coping with difficulties in their relationships.
+            In my practice, I work with individuals and couples of
+            all races, ethnicities, genders, sexualities, abilities, and backgrounds. 
+            I have many years of experience helping families of all kinds 
+            who are coping with difficulties in their relationships.
             Some couples come to see me to heal their marriages and some come to
             learn how to separate in ways to that support empathic separation
             and positive coparenting.{" "}

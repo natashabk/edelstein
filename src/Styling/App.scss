@@ -15,13 +15,13 @@
     padding: 0px;
   }
   &#welcome {
-    background-image: url("https://images.unsplash.com/19/waves.JPG");
+    background-image: url("https://images.unsplash.com/photo-1474778577467-8697eaf62a7c");
   }
   &#booking {
     background-image: url("https://images.unsplash.com/photo-1488702953093-ac0820558db2");
   }
   &#about {
-    background-image: url("https://images.unsplash.com/reserve/O7A9fAvYSXC7NTdz8gLQ_IMGP1039.jpg");
+    background-image: url("https://images.unsplash.com/19/waves.JPG");
   }
   &#forms {
     background-image: url("https://images.unsplash.com/photo-1470319149473-af271634cecf");
@@ -34,19 +34,23 @@
 .forms,
 .booking {
   padding-right: 10px !important;
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 
+
 .bg-light {
-  background-color: #d6d4d4!important;
-  box-shadow: 1px 3px 5px #afaeae;
+  background-color: #dadadc!important;
   a{
     color: #fff!important;
-    text-shadow: 1px 1.5px #929191;
+  &:hover{
+    color: #a09e9e !important;
+    cursor: pointer;
+  }
   }
 }
 
 .navbar-light .navbar-brand {
+  color: #fff !important;
   text-shadow: 1px 2px #a09e9e;
   font-size: x-large;
 }
@@ -88,7 +92,7 @@
 
 // WELCOME
 #overlay {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   width: 85%;
   margin: auto;
   min-height: 42em;
@@ -105,15 +109,34 @@
 #welcomeText {
   overflow: scroll;
   height: 650px;
+  position: relative;
 }
 
 #specialities,
-#whoISee,
 #intro {
   text-align: left;
   height: 650px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+// INTRO
+
+p#intro{
+  font-size: 17px;
+}
+
+#officeRow{
+  height: 40%;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 35px;
+}
+
+img#officeImg{
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 // SPECIALIITIES
@@ -130,10 +153,28 @@ strong {
   text-align: left;
   margin-left: 30px;
   margin-top: 30px;
+  margin-bottom: 35px;
+  display: inline-flex;
   img {
     max-height: 200px;
   }
 }
+
+#aboutList{
+  strong{
+    line-height: 30px;
+  }
+}
+
+#about{
+  text-align: left;
+  p{
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 15px;
+  }
+}
+
 // PAGINATION
 .pagination {
   &Back {
@@ -147,7 +188,23 @@ strong {
   }
 }
 
-
+// FOOTER 
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #353535;
+    background-color: #d6d4d4;
+    text-align: center;
+    height: 40px;
+    font-size: 10px;
+    box-shadow: 1px -3px 5px #afaeae;
+    padding-top: 5px;
+    p{
+      margin-bottom: 0;
+    }
+}
 
 // more pictures
 // https://images.unsplash.com/photo-1470319149473-af271634cecf
