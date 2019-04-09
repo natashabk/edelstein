@@ -35,6 +35,7 @@
   margin: auto;
   margin-bottom: 30px;
   min-height: 42em;
+  color: #353535;
 }
 
 // NAVBAR
@@ -245,22 +246,58 @@ strong {
   margin-top: 20px;
 }
 
-// FOOTER
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #353535;
-  background-color: #d6d4d4;
-  text-align: center;
-  height: 40px;
-  font-size: 10px;
-  box-shadow: 1px -3px 5px #afaeae;
-  padding-top: 5px;
-  p {
-    margin-bottom: 0;
+// FORMS
+#formBtn{
+  border-radius: 10px;
+  padding: 7px;
+  border: 1px solid #9b9999;
+  background-color: transparent;
+  margin: 5px;
+  width: max-content;
+  min-width: 6em;
+  background-color: #fff;
+    color: #9b9999 !important;
+  &:hover {
+    color: #fff !important;
+    background-color: #9b9999 !important;
   }
+}
+#form{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  p{
+    font-size: 17px;
+    color: #353535;
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+  }
+}
+
+.col-sm-4{
+  text-align: right;
+}
+
+
+// PAYMENT
+.payment {
+  text-align: left;
+  &.row{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#paymentCol{
+  text-align: left;
 }
 
 // more pictures

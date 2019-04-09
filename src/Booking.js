@@ -45,7 +45,7 @@ export default class Booking extends Component {
               <li>drsusanedelstein@gmail.com</li>
               <br></br>
               <li id="officeInfoHead"><strong>License Number</strong></li>
-              <li>PSY14535</li>
+              <li>#PSY14535</li>
               </ul>
           </div>
       </div>
