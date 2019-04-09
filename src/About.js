@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { Row, Container } from "react-bootstrap";
 export default class About extends Component {
   render() {
     return (
       <div className="bg" id="about">
-        <div id="overlay">
+        <Container>
           <h1 id="welcomeTitle">I'm Dr. Susan Edelstein.</h1>
+          <Row id="specialitiesText">
           <div id="headshot">
             <img
               src="http://thenewtemperament.com/images/nt_drsue-photo.jpg"
@@ -17,6 +19,8 @@ export default class About extends Component {
               <li><strong>License</strong>{" "}#PSY14535</li>
               </ul>
           </div>
+          </Row>
+          <Row id="specialitiesText" className="aboutRow">
           <p>
             {" "}
             With almost thirty years of experience working as a psychologist, I
@@ -43,8 +47,9 @@ export default class About extends Component {
             working with children with emotional and behavioral issues, I can
             help.
           </p>
+          </Row>
+      </Container>
         </div>
-      </div>
     );
   }
 }

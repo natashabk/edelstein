@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { Element } from "react-scroll";
 export default class Home extends Component {
   render() {
     return (
       <div className="bg" id="welcome">
-        <div id="overlay">
+        <Container>
           <Element className="element" id="welcomeText">
             <Element name="intro" id="intro">
               <h1 id="welcomeTitle">
@@ -14,6 +14,7 @@ export default class Home extends Component {
               <Row id="officeRow">
               <img src="https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2018/10/GettyImages-814596806.jpg" alt="couch-placeholder" id="officeImg"/>
               </Row>
+              <Row id="introText">
               <p>
                 {" "}
                 At times, things may seem so overwhelming that we despair of
@@ -33,12 +34,13 @@ export default class Home extends Component {
                 needs, we can work together to identify ways to overcome
                 whatever obstacles you’re facing.
               </p>
+              </Row>
             </Element>
             <Element name="specialities" id="specialities">
               <h1 id="welcomeTitle">Specialities</h1>
               <p>
                 <ul>
-                <Row>
+                <Row id="specialitiesText">
                   <Col>
                 <li>
                   <strong>Anxiety </strong>
@@ -96,7 +98,7 @@ export default class Home extends Component {
             </Element>
            
           </Element>
-        </div>
+        </Container>
       </div>
     );
   }

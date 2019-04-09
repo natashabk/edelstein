@@ -34,6 +34,20 @@ export default class Booking extends Component {
             text="Office"
           />
         </GoogleMapReact>
+          <div className="officeInfo">
+          <ul>
+              <li id="officeInfoHead"><strong>Office Location</strong></li>
+              <li>1099 D St. Suite E</li>
+              <li>San Rafael, CA 94901</li>
+              <br></br>
+              <li id="officeInfoHead"><strong>Contact Information</strong></li>
+              <li>Mobile: (415)302-2246</li>
+              <li>drsusanedelstein@gmail.com</li>
+              <br></br>
+              <li id="officeInfoHead"><strong>License Number</strong></li>
+              <li>PSY14535</li>
+              </ul>
+          </div>
       </div>
             </Col>
           <Col>

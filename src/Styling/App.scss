@@ -28,6 +28,15 @@
   }
 }
 
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  min-height: 42em;
+}
+
 // NAVBAR
 .welcome,
 .about,
@@ -37,15 +46,14 @@
   padding-left: 10px !important;
 }
 
-
 .bg-light {
-  background-color: #dadadc!important;
-  a{
-    color: #fff!important;
-  &:hover{
-    color: #a09e9e !important;
-    cursor: pointer;
-  }
+  background-color: #dadadc !important;
+  a {
+    color: #fff !important;
+    &:hover {
+      color: #a09e9e !important;
+      cursor: pointer;
+    }
   }
 }
 
@@ -122,18 +130,21 @@
 
 // INTRO
 
-p#intro{
+#introText {
   font-size: 17px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#officeRow{
+#officeRow {
   height: 40%;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 35px;
 }
 
-img#officeImg{
+img#officeImg {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -148,6 +159,15 @@ strong {
   line-height: 40px;
 }
 
+#specialitiesText {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  &.aboutRow {
+    padding-bottom: 20px;
+  }
+}
+
 // ABOUT
 #headshot {
   text-align: left;
@@ -160,18 +180,18 @@ strong {
   }
 }
 
-#aboutList{
-  strong{
+#aboutList {
+  strong {
     line-height: 30px;
   }
 }
 
-#about{
+#about {
   text-align: left;
-  p{
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 15px;
+  p {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
   }
 }
 
@@ -189,21 +209,35 @@ strong {
 }
 
 // BOOKING
-.squareWidget{
+.squareWidget {
   width: 99%;
   height: 100%;
   border: 1px solid grey;
 }
-.squareWrapper{
+
+.squareWrapper {
   width: 100%;
-  height: 900px;
+  height: 800px;
   padding: 20px;
 }
 
+.officeInfo {
+  background-color: rgba(255, 255, 255, 0.7);
+  min-height: 300px;
+  border: 1px solid grey;
+  margin-top: 35px;
+  ul {
+    margin-top: 20px;
+    padding-inline-start: 0;
+  }
+}
+#officeInfoHead strong{
+  line-height: 30px;
+}
 
 // MAP
 
-.mapWrapper{
+.mapWrapper {
   height: 50%;
   width: 100%;
   border: 1px solid grey;
@@ -211,23 +245,22 @@ strong {
   margin-top: 20px;
 }
 
-
-// FOOTER 
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #353535;
-    background-color: #d6d4d4;
-    text-align: center;
-    height: 40px;
-    font-size: 10px;
-    box-shadow: 1px -3px 5px #afaeae;
-    padding-top: 5px;
-    p{
-      margin-bottom: 0;
-    }
+// FOOTER
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #353535;
+  background-color: #d6d4d4;
+  text-align: center;
+  height: 40px;
+  font-size: 10px;
+  box-shadow: 1px -3px 5px #afaeae;
+  padding-top: 5px;
+  p {
+    margin-bottom: 0;
+  }
 }
 
 // more pictures
