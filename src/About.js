@@ -9,7 +9,7 @@ export default class About extends Component {
           <Row id="specialitiesText">
           <div id="headshot">
             <img
-              src="http://thenewtemperament.com/images/nt_drsue-photo.jpg"
+              src="https://i.imgur.com/IuetL5w.jpg"
               alt="placeholder"
             />
             <ul id="aboutList">

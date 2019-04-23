@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import GoogleMapReact from 'google-map-react';
-import { longStackSupport } from "q";
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+// import { longStackSupport } from "q";
+
+
+const marker = 'https://i.imgur.com/tLivjtG.png';
+const OfficePin = ({ text }) => <div><img  className="officeMarker" src={marker}/></div>;
 const API_KEY = `${process.env.REACT_APP_GOOGLE_API_KEY}`;
 
 export default class Booking extends Component {
@@ -15,7 +18,6 @@ export default class Booking extends Component {
   };
 
   render() {
-
     return (
       <div className="bg" id="booking">
         <div id="overlay">
@@ -28,8 +30,8 @@ export default class Booking extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent
-            lat={37.974311}
+          <OfficePin
+            lat={37.9743068}
             lng={-122.5344006}
             text="Office"
           />

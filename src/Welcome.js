@@ -12,7 +12,7 @@ export default class Home extends Component {
                 How do you know when it's time to ask for help?
               </h1>
               <Row id="officeRow">
-              <img src="https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2018/10/GettyImages-814596806.jpg" alt="couch-placeholder" id="officeImg"/>
+              <img src="https://i.imgur.com/H4gKtL5.jpg" alt="couch-placeholder" id="officeImg"/>
               </Row>
               <Row id="introText">
               <p>
