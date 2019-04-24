@@ -4,11 +4,6 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 // import { longStackSupport } from "q";
 
 const marker = "https://i.imgur.com/tLivjtG.png";
-// const OfficePin = ({ text }) => (
-//   <div>
-//     <img className="officeMarker" src={marker} />
-//   </div>
-// );
 const API_KEY = `${process.env.REACT_APP_GOOGLE_API_KEY}`;
 
 export class Booking extends Component {
@@ -17,10 +12,10 @@ export class Booking extends Component {
       lat: 37.974311,
       lng: -122.531995
     }
-    // zoom: 13
   };
 
   render() {
+    const google = window.google
     return (
       <div className="bg" id="booking">
         <div id="overlay">
@@ -32,15 +27,17 @@ export class Booking extends Component {
                   google={this.props.google}
                   zoom={13}
                   initialCenter={this.props.center}
+                  fullscreenControl={false}
+                  mapTypeControl={false}
+                  streetViewControl={false}
                 >
                   <Marker
                     name={"My Office"}
                     position={this.props.center}
-                    // icon={{
-                    //   url: {marker},
-                      // anchor: new google.maps.Point(32, 32),
-                      // scaledSize: new google.maps.Size(64, 64)
-                    // }}
+                    icon={{
+                      url: marker,
+                      scaledSize: new google.maps.Size(64, 75)
+                    }}
                   />
 
                   {/* <InfoWindow onClose={this.onInfoWindowClose}>
