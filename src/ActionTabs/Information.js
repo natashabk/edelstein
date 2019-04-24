@@ -4,22 +4,6 @@ export default class Information extends Component {
     return (
       <ul>
         <li id="officeInfoHead">
-          <strong>Office Location</strong>
-        </li>
-        <li>1099 D St. Suite E</li>
-        <li>San Rafael, CA 94901</li>
-        <br />
-        <li id="officeInfoHead">
-          <strong>Contact Information</strong>
-        </li>
-        <li>Mobile: (415)302-2246</li>
-        <li>drsusanedelstein@gmail.com</li>
-        <br />
-        <li id="officeInfoHead">
-          <strong>License Number</strong>
-        </li>
-        <li>#PSY14535</li>
-        <li id="officeInfoHead">
           <strong>Avg. Cost Per Session:</strong>
         </li>
         <li>$200 (sliding scale available)</li>

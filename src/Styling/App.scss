@@ -115,6 +115,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 93%;
 }
 
 #welcomeTitle {
@@ -151,19 +152,27 @@
 
 a.nav-link {
   color: #35353596;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border: none;
 }
 .nav-tabs .nav-link.active:hover {
   background-color: #fff;
-  border-bottom: none;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+border: none;
 }
 
 .nav-tabs .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: none;
+  border: none;
 }
 
 .nav-tabs {
-  border-bottom: none;
+  border: none;
+  font-size: 18px;
 }
 
 #actionTabs{
@@ -285,6 +294,7 @@ strong {
 
 #locationInfoText{
   margin-top: 20px;
+  text-align: left;
 }
 // FORMS
 #formBtn {
