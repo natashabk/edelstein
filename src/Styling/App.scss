@@ -15,7 +15,8 @@
     padding: 0px;
   }
   &#welcome {
-    background-image: url("https://images.unsplash.com/photo-1474778577467-8697eaf62a7c");
+    // background-image: url("https://images.unsplash.com/photo-1474778577467-8697eaf62a7c");
+    background-image: url("https://i.imgur.com/IuetL5w.jpg");
   }
   &#booking {
     background-image: url("https://images.unsplash.com/photo-1488702953093-ac0820558db2");
@@ -37,6 +38,15 @@
   min-height: 42em;
   color: #353535;
 }
+#rightCol {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    max-width: 600px;
+    height: 650px;
+    overflow: scroll;
+    padding: 0;
+  }
+
 
 // NAVBAR
 .welcome,
@@ -112,7 +122,9 @@
 #welcomeTitle {
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 #welcomeText {
@@ -121,12 +133,26 @@
   position: relative;
 }
 
-#specialities,
-#intro {
+#pBlock {
   text-align: left;
-  height: 650px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  br {
+    line-height: 3;
+  }
+}
+.tabWrapper {
+  max-height: 575px;
+  overflow: scroll;
+}
+
+#welcomeRow{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+a.nav-link {
+  color: #35353596;
 }
 
 // INTRO
@@ -155,6 +181,7 @@ img#officeImg {
 
 ul {
   list-style: none;
+  padding:0;
 }
 strong {
   line-height: 40px;
@@ -166,33 +193,6 @@ strong {
   margin-right: auto;
   &.aboutRow {
     padding-bottom: 20px;
-  }
-}
-
-// ABOUT
-#headshot {
-  text-align: left;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 35px;
-  display: inline-flex;
-  img {
-    max-height: 200px;
-  }
-}
-
-#aboutList {
-  strong {
-    line-height: 30px;
-  }
-}
-
-#about {
-  text-align: left;
-  p {
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 15px;
   }
 }
 
@@ -226,14 +226,24 @@ strong {
   background-color: rgba(255, 255, 255, 0.7);
   min-height: 300px;
   border: 1px solid grey;
-  margin-top: 35px;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 100%;
   ul {
     margin-top: 20px;
     padding-inline-start: 0;
   }
 }
-#officeInfoHead strong{
+#officeInfoHead strong {
   line-height: 30px;
+}
+
+#bookingTitle{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 // MAP
@@ -247,14 +257,14 @@ strong {
   position: relative;
 }
 
-.officeMarker{
+.officeMarker {
   vertical-align: top;
   border-style: none;
   height: 100px;
 }
 
 // FORMS
-#formBtn{
+#formBtn {
   border-radius: 10px;
   padding: 7px;
   border: 1px solid #9b9999;
@@ -263,13 +273,13 @@ strong {
   width: max-content;
   min-width: 6em;
   background-color: #fff;
-    color: #9b9999 !important;
+  color: #9b9999 !important;
   &:hover {
     color: #fff !important;
     background-color: #9b9999 !important;
   }
 }
-#form{
+#form {
   background-color: rgba(255, 255, 255, 0.7);
   padding-top: 7px;
   padding-bottom: 7px;
@@ -279,7 +289,7 @@ strong {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  p{
+  p {
     font-size: 17px;
     color: #353535;
     display: table-cell;
@@ -289,21 +299,20 @@ strong {
   }
 }
 
-.col-sm-4{
+.col-sm-4 {
   text-align: right;
 }
-
 
 // PAYMENT
 .payment {
   text-align: left;
-  &.row{
+  &.row {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-#paymentCol{
+#paymentCol {
   text-align: left;
 }
 

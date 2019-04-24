@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Home from "./Home.js";
 import Welcome from "./Welcome.js";
 import Booking from "./Booking.js";
-import About from "./About.js";
+import About from "./Tabs/About.js";
 import Forms from "./Forms.js";
 import NavBar from "./NavBar.js";
 import {
@@ -69,13 +69,13 @@ class App extends Component {
     return (
       <div className="App">
         <Home />
-        <NavBar scrollToWithContainer={this.scrollToWithContainer}/>
+        {/* <NavBar scrollToWithContainer={this.scrollToWithContainer}/> */}
         <Element name="welcome" className="element">
           <Welcome />
         </Element>
-        <Element name="about" className="element">
+        {/* <Element name="about" className="element">
           <About />
-        </Element>
+        </Element> */}
         <Element name="forms" className="element">
           <Forms />
         </Element>
