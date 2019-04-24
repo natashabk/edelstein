@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Tabs, Tab } from "react-bootstrap";
-import About from "./Tabs/About";
-import Welcome from "./Tabs/Welcome";
-import Specialities from "./Tabs/Specialities";
+import About from "./MainTabs/About";
+import Welcome from "./MainTabs/Welcome";
+import Specialities from "./MainTabs/Specialities";
 import { Element } from "react-scroll";
-export default class Home extends Component {
+export default class Main extends Component {
   render() {
     return (
       <div className="bg" id="welcome">
       <Row id="welcomeRow">
         <Col></Col>
         <Col xs={12} sm={12} md={7} id="rightCol">
-          <Tabs defaultActiveKey="welcome">
+          <Tabs fill variant="tabs" defaultActiveKey="welcome">
             <Tab eventKey="welcome" title="Welcome">
               <Welcome />
             </Tab>

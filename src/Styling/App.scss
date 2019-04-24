@@ -39,14 +39,13 @@
   color: #353535;
 }
 #rightCol {
-    background-color: rgba(255, 255, 255, 0.7);
-    margin: 0;
-    max-width: 600px;
-    height: 650px;
-    overflow: scroll;
-    padding: 0;
-  }
-
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  max-width: 600px;
+  height: 650px;
+  overflow: scroll;
+  padding: 0;
+}
 
 // NAVBAR
 .welcome,
@@ -112,11 +111,10 @@
 // WELCOME
 #overlay {
   background-color: rgba(255, 255, 255, 0.7);
-  width: 85%;
-  margin: auto;
-  min-height: 42em;
-  padding: 10px;
   color: #353535;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #welcomeTitle {
@@ -146,13 +144,31 @@
   overflow: scroll;
 }
 
-#welcomeRow{
+#welcomeRow {
   margin-right: 0;
   margin-left: 0;
 }
 
 a.nav-link {
   color: #35353596;
+}
+.nav-tabs .nav-link.active:hover {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: none;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+#actionTabs{
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 // INTRO
@@ -181,7 +197,7 @@ img#officeImg {
 
 ul {
   list-style: none;
-  padding:0;
+  padding: 0;
 }
 strong {
   line-height: 40px;
@@ -211,15 +227,14 @@ strong {
 
 // BOOKING
 .squareWidget {
-  width: 99%;
+  width: 100%;
   height: 100%;
-  border: 1px solid grey;
+  border: 1px solid transparent;
 }
 
 .squareWrapper {
   width: 100%;
-  height: 800px;
-  padding: 20px;
+  height: 32em;
 }
 
 .officeInfo {
@@ -238,7 +253,7 @@ strong {
   line-height: 30px;
 }
 
-#bookingTitle{
+#bookingTitle {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -249,12 +264,11 @@ strong {
 // MAP
 
 .mapWrapper {
-  height: 50%;
-  width: 100%;
   border: 1px solid grey;
-  margin-left: 30px;
   margin-top: 20px;
   position: relative;
+  height: 29em;
+  width: 60%;
 }
 
 .officeMarker {
@@ -314,6 +328,17 @@ strong {
 }
 #paymentCol {
   text-align: left;
+}
+
+#middleCol{
+  height: 650px;
+  overflow: scroll;
+}
+
+.actionTabWrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 // more pictures

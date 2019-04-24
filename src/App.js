@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Home from "./Home.js";
-import Welcome from "./Welcome.js";
-import Booking from "./Booking.js";
-import About from "./Tabs/About.js";
+import Welcome from "./Main.js";
+import Booking from "./Action.js";
+import About from "./MainTabs/About.js";
 import Forms from "./Forms.js";
 import NavBar from "./NavBar.js";
 import {
@@ -76,9 +76,9 @@ class App extends Component {
         {/* <Element name="about" className="element">
           <About />
         </Element> */}
-        <Element name="forms" className="element">
+        {/* <Element name="forms" className="element">
           <Forms />
-        </Element>
+        </Element> */}
         <Element name="booking" className="element">
           <Booking />
         </Element>
