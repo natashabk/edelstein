@@ -14,7 +14,7 @@ export default class Action extends Component {
       <Col xs={12} sm={12} md={9} id="middleCol">
         <div id="overlay">
         <div className="actionTabWrapper">
-          <h1 id="bookingTitle">Book your next session</h1>
+          <h1 id="bookingTitle">Booking <span class="glyphicon glyphicon-asterisk"></span></h1>
           <Tabs fill variant="tabs" defaultActiveKey="scheduling">
             <Tab eventKey="scheduling" title="Scheduling">
               <div className="squareWrapper">
@@ -25,7 +25,7 @@ export default class Action extends Component {
               </div>
             </Tab>
             <Tab eventKey="location" title="Location">
-            <div className="mapWrapper">
+            <div>
               <OfficeMap />
               </div>
             </Tab>

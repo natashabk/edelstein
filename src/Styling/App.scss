@@ -264,11 +264,10 @@ strong {
 // MAP
 
 .mapWrapper {
-  border: 1px solid grey;
   margin-top: 20px;
   position: relative;
-  height: 29em;
-  width: 60%;
+  height: 25em;
+  width: 100%;
 }
 
 .officeMarker {
@@ -277,6 +276,16 @@ strong {
   height: 100px;
 }
 
+#locationRow{
+  // flex-direction: column;
+  max-width: 100%;
+  margin-right:  0;
+  margin-left: 0;
+}
+
+#locationInfoText{
+  margin-top: 20px;
+}
 // FORMS
 #formBtn {
   border-radius: 10px;
