@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import Home from "./Home.js";
 import Welcome from "./Main.js";
 import Booking from "./Action.js";
-import About from "./MainTabs/About.js";
-import Forms from "./Forms.js";
-import NavBar from "./NavBar.js";
+
 import {
   Element,
   Events,
@@ -68,17 +66,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
-        {/* <NavBar scrollToWithContainer={this.scrollToWithContainer}/> */}
+        <Element name="home" className="element">
+          <Home />
+        </Element>
         <Element name="welcome" className="element">
           <Welcome />
         </Element>
-        {/* <Element name="about" className="element">
-          <About />
-        </Element> */}
-        {/* <Element name="forms" className="element">
-          <Forms />
-        </Element> */}
         <Element name="booking" className="element">
           <Booking />
         </Element>
