@@ -338,11 +338,12 @@ strong {
 
 // PAYMENT
 .payment {
-  text-align: left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
   &.row {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 0px;
   }
 }
 #paymentCol {

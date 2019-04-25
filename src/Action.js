@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Tabs, Tab } from "react-bootstrap";
 import OfficeMap from "./ActionTabs/OfficeMap";
-import Information from "./ActionTabs/Information";
+import Information from "./ActionTabs/Payment";
 import Forms from "./ActionTabs/Forms";
 
 const symbols = {
