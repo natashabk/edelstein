@@ -13,7 +13,7 @@ const symbols = {
 
 export default class Action extends Component {
   getResponsiveTabTitle(tab) {
-    let span = <span class={`glyphicon glyphicon-${symbols[tab]}`} />;
+    let span = <span className={`glyphicon glyphicon-${symbols[tab]}`} />;
     return window.innerWidth <= 375 ? span : tab;
   }
 
@@ -33,6 +33,7 @@ export default class Action extends Component {
                   >
                     <div className="squareWrapper">
                       <iframe
+                      title="squareAppointmentsWidget"
                         className="squareWidget"
                         src="https://squareup.com/appointments/buyer/widget/d87f4ed1-ee69-4a95-8df2-eb6dfc7b4190/C0H1E7DZ26ZEZ"
                       />

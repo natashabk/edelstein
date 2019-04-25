@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Row, Col, Container, Tabs, Tab } from "react-bootstrap";
+import { Row, Col, Tabs, Tab } from "react-bootstrap";
 import About from "./MainTabs/About";
 import Welcome from "./MainTabs/Welcome";
 import Specialities from "./MainTabs/Specialities";
-import { Element } from "react-scroll";
 export default class Main extends Component {
   render() {
     return (
