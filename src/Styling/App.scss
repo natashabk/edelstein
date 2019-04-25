@@ -243,6 +243,7 @@ strong {
 
 .squareWrapper {
   width: 100%;
+  max-width: 580px;
   height: 32em;
 }
 
@@ -295,16 +296,19 @@ strong {
 #locationInfoText{
   margin-top: 20px;
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
 }
 // FORMS
 #formBtn {
-  border-radius: 10px;
-  padding: 7px;
-  border: 1px solid #9b9999;
+  // border-radius: 10px;
+  // padding: 7px;
+  // border: 1px solid #9b9999;
   background-color: transparent;
   margin: 5px;
-  width: max-content;
-  min-width: 6em;
+  // width: max-content;
+  // min-width: 6em;
+  text-align: center;
   background-color: #fff;
   color: #9b9999 !important;
   &:hover {
@@ -359,6 +363,37 @@ strong {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
+  overflow: scroll;
+}
+
+.table td, .table th {
+    padding: 1.75rem;
+    margin: 10px;
+    vertical-align: top;
+    border: 1px solid #9b9999;
+    /* border-top: 14px solid transparent; */
+    text-align: left;
+}
+.table{
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: fit-content;
+  padding-top: 20px;
+}
+
+#formsNote{
+  padding-top: 20px;
+  color: #9b9999;
+}
+
+li.white{
+  background-color: rgba(255, 255, 255, 0.7);
+  &#officeInfoHead{
+    padding-top: 10px;
+  }
+  &#bottom{
+    padding-bottom: 10px;
+  }
 }
 
 // more pictures
