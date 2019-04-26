@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Button, Row } from "react-bootstrap";
+import FormButton from "./FormButton";
 
 const formNames = {
   nOPP: "Notice of Privacy Policies",
@@ -20,7 +21,9 @@ export default class Forms extends Component {
       hIPAAN: false,
       iCAdults: false,
       iCKids: false
-    }
+    },
+    loading: false,
+    sentStatus: 'unsent'
   };
 
   populateFormList() {
@@ -70,20 +73,23 @@ export default class Forms extends Component {
     });
   };
 
-  callAPI = e => {
-    e.preventDefault();
-    let data = {}
-    data.name = this.state.name;
-    data.email = this.state.email;
-    data.newPatient = this.state.newPatient;
-    data.forms = '';
-    
+  formatRequest(){
+    let data = this.state;
+    data.formString = '';
     let forms = (Object.keys(this.state.forms).filter(form=> this.state.forms[form]=== true))
     forms.forEach(abbreviation =>
-      data.forms = data.forms + ', ' + formNames[abbreviation] 
+      data.formString = data.formString + ', ' + formNames[abbreviation] 
     );
+    data.formString = data.formString.slice(2)
+    return data;
+  }
 
-    console.log(data)
+
+  callAPI = e => {
+    e.preventDefault();
+    this.setState({loading: true})
+
+    let data = this.formatRequest();
     fetch("https://us-central1-edelstein-4e6a1.cloudfunctions.net/sendEmail", {
       method: "POST",
       headers: {
@@ -91,8 +97,18 @@ export default class Forms extends Component {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(data)
-    }).then(resp => console.log(resp));
-    return <p>whatever</p>;
+    }).then(resp => {
+      if (resp.status === 200){
+        this.setState({
+          sentStatus: 'success',
+          loading: false
+        })
+      } else { 
+        this.setState({
+          sentStatus: 'error',
+          loading: false})
+        }
+    });
   }
 
   render() {
@@ -117,9 +133,6 @@ export default class Forms extends Component {
               onChange={this.handleChange}
               value={this.state.email}
             />
-            <Form.Text className="text-muted">
-              Your email will never be shared with anyone else.
-            </Form.Text>
           </Form.Group>
 
           <Form.Group as={Row} controlId="formNewCheckbox">
@@ -138,9 +151,12 @@ export default class Forms extends Component {
 
           {this.populateFormList()}
 
-          <Button id="formBtn" type="submit">
-            Request Forms
-          </Button>
+          <FormButton
+          loading={this.state.loading}
+          sentStatus={this.state.sentStatus}
+          validated={(this.state.name && this.state.email)? true:false}
+          /> 
+
         </Form>
       </div>
     );
