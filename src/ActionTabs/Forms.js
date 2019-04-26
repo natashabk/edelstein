@@ -70,11 +70,35 @@ export default class Forms extends Component {
     });
   };
 
+  callAPI = e => {
+    e.preventDefault();
+    let data = {}
+    data.name = this.state.name;
+    data.email = this.state.email;
+    data.newPatient = this.state.newPatient;
+    data.forms = '';
+    
+    let forms = (Object.keys(this.state.forms).filter(form=> this.state.forms[form]=== true))
+    forms.forEach(abbreviation =>
+      data.forms = data.forms + ', ' + formNames[abbreviation] 
+    );
+
+    console.log(data)
+    fetch("https://us-central1-edelstein-4e6a1.cloudfunctions.net/sendEmail", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(resp => console.log(resp));
+    return <p>whatever</p>;
+  }
+
   render() {
-    console.log(this.state);
     return (
       <div>
-        <Form>
+        <Form onSubmit={this.callAPI}>
           <Form.Group as={Row} controlId="name">
             <Form.Label>Your Name</Form.Label>
             <Form.Control
