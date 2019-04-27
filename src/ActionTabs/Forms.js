@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Button, Row } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import FormButton from "./FormButton";
 
 const formNames = {
@@ -85,7 +85,7 @@ export default class Forms extends Component {
   }
 
 
-  callAPI = e => {
+  sendEmail = e => {
     e.preventDefault();
     this.setState({loading: true})
 
@@ -113,26 +113,32 @@ export default class Forms extends Component {
 
   render() {
     return (
-      <div>
-        <Form onSubmit={this.callAPI}>
+      <div id="formsWrapper">
+        <Form onSubmit={this.sendEmail}>
           <Form.Group as={Row} controlId="name">
             <Form.Label>Your Name</Form.Label>
+            <Col xs="12" sm="8">
             <Form.Control
+            size="lg"
               type="text"
               placeholder="Enter your full name"
               onChange={this.handleChange}
               value={this.state.name}
             />
+            </Col>
           </Form.Group>
 
           <Form.Group as={Row} controlId="email">
             <Form.Label>Email address</Form.Label>
+            <Col xs="12" sm="8">
             <Form.Control
+            size="lg"
               type="email"
               placeholder="Enter email"
               onChange={this.handleChange}
               value={this.state.email}
             />
+            </Col>
           </Form.Group>
 
           <Form.Group as={Row} controlId="formNewCheckbox">

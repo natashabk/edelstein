@@ -4,7 +4,7 @@ import FormAlert from "./FormAlert";
 export default class FormButton extends Component {
   loadingBtn() {
     return (
-      <button id="formBtn" disabled>
+      <button className="formBtn" id="loading" disabled>
         <i className="fa fa-circle-o-notch fa-spin" /> Loading...
       </button>
     );
@@ -13,10 +13,10 @@ export default class FormButton extends Component {
   successBtn() {
     return (
       <div>
-      <button id="formBtn" disabled>
+      <button className="formBtn" id="success" disabled>
         <span className={`glyphicon glyphicon-ok`} /> Sent
       </button>
-      <FormAlert status="success"/>
+      <FormAlert status="light"/>
       </div>
     );
   }
@@ -24,8 +24,8 @@ export default class FormButton extends Component {
   errorBtn() {
     return (
       <div>
-      <button id="formBtn">
-        Request Forms
+      <button className="formBtn">
+        REQUEST FORMS
       </button>
       <FormAlert status="error"/>
       </div>
@@ -34,9 +34,9 @@ export default class FormButton extends Component {
 
   unsentBtn() {
     if (this.props.validated) {
-      return <button id="formBtn">Request Forms</button>;
+      return <button className="formBtn">REQUEST FORMS</button>;
     } else {
-      return <button id="formBtn" disabled>Request Forms</button>;
+      return <button className="formBtn" disabled>REQUEST FORMS</button>;
     }
   }
 
