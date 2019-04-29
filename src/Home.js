@@ -6,8 +6,7 @@ export default class Home extends Component {
     return (
       <div className="bg" id="home">
         <div id="homeTitle">
-          <h1>Find your way back</h1>
-          <h1 id="homeBtmTitle">to a healthier you.</h1>
+          <h1>Find your way back <br/>to a healthier you.</h1>
           <Link
             className="homeBtn"
             id="topHomeBtn"
