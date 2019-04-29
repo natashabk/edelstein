@@ -19,10 +19,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    Events.scrollEvent.register("begin", function() {
-    });
-    Events.scrollEvent.register("end", function() {
-    });
+    Events.scrollEvent.register("begin", function() {});
+    Events.scrollEvent.register("end", function() {});
   }
   scrollToTop() {
     scroll.scrollToTop();

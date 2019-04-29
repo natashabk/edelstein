@@ -4,7 +4,7 @@ export default class Specialities extends Component {
   render() {
     return (
       <div className="tabWrapper">
-        <h1 id="welcomeTitle">Specialities</h1>
+        <h1 className="welcomeTitle">Specialities</h1>
         <ul>
           <Row id="specialitiesText">
             <Col>

@@ -1,3 +1,8 @@
+// css bugs to fix
+// - home title 
+// -authorization to release info form on mobile
+// 
+
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
 
 .App {
@@ -16,72 +21,22 @@
     // background-image: url("https://images.unsplash.com/photo-1488702953093-ac0820558db2");
     // background-image: url("https://images.unsplash.com/19/waves.JPG");
     // background-image: url("background-image: url("https://images.unsplash.com/photo-1470319149473-af271634cecf");
-    background-image: url("https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
-    // https://images.unsplash.com/photo-1507095490680-b83c2ec04d2f
-    // https://images.unsplash.com/photo-1547581268-c4c11f4d6311
-
+    // background-image: url("https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
+    background-image: url("../Images/white-green-plants.jpeg")
+    // background-image: url("https://images.unsplash.com/photo-1471340620190-18627b679d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   }
   &#welcome {
     background-image: url("https://i.imgur.com/IuetL5w.jpg");
   }
   &#booking {
-    background-image: url("https://images.unsplash.com/photo-1488702953093-ac0820558db2");
+    // background-image: url("https://images.unsplash.com/photo-1488702953093-ac0820558db2");
+    background-image: url("../Images/blue-yellow-plants.jpeg")
   }
-  &#about {
-    background-image: url("https://images.unsplash.com/19/waves.JPG");
-  }
-  &#forms {
-    background-image: url("https://images.unsplash.com/photo-1470319149473-af271634cecf");
-  }
-}
-
-.container {
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  margin-bottom: 30px;
-  min-height: 42em;
-  color: #353535;
-}
-#rightCol {
-  background-color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-  max-width: 600px;
-  height: 650px;
-  overflow: scroll;
-  padding: 0;
-}
-
-// NAVBAR
-.welcome,
-.about,
-.forms,
-.booking {
-  padding-right: 10px !important;
-  padding-left: 10px !important;
-}
-
-.bg-light {
-  background-color: #dadadc !important;
-  a {
-    color: #fff !important;
-    &:hover {
-      color: #a09e9e !important;
-      cursor: pointer;
-    }
-  }
-}
-
-.navbar-light .navbar-brand {
-  color: #fff !important;
-  text-shadow: 1px 2px #a09e9e;
-  font-size: x-large;
 }
 
 // HOME TITLE
 #homeTitle {
-  margin-top: 40%;
+  margin-top: 265px;
   h1 {
     font-family: "Rubik", sans-serif;
     color: #353535;
@@ -114,7 +69,41 @@
   }
 }
 
-// WELCOME
+// MAIN 
+
+#rightCol {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  max-width: 600px;
+  height: 650px;
+  overflow: scroll;
+  padding: 0;
+}
+
+.welcomeTitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.pBlock {
+  text-align: left;
+  padding-left: 35px;
+  padding-right: 35px;
+  br {
+    line-height: 3;
+  }
+}
+
+.tabWrapper {
+  max-height: 575px;
+  overflow: scroll;
+}
+
+// ACTION
+
 #overlay {
   background-color: rgba(255, 255, 255, 0.7);
   color: #353535;
@@ -124,32 +113,7 @@
   height: 93%;
 }
 
-#welcomeTitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-  padding-right: 35px;
-  padding-left: 35px;
-}
 
-#welcomeText {
-  overflow: scroll;
-  height: 650px;
-  position: relative;
-}
-
-#pBlock {
-  text-align: left;
-  padding-left: 35px;
-  padding-right: 35px;
-  br {
-    line-height: 3;
-  }
-}
-.tabWrapper {
-  max-height: 575px;
-  overflow: scroll;
-}
 
 #welcomeRow {
   margin-right: 0;
@@ -179,6 +143,19 @@ border: none;
 .nav-tabs {
   border: none;
   font-size: 18px;
+  &.nav-link{
+    &active{
+      border: none;
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+      }
+    }
+    :hover{
+
+    }
+  }
+
 }
 
 #actionTabs{

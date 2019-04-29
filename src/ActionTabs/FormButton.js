@@ -13,10 +13,10 @@ export default class FormButton extends Component {
   successBtn() {
     return (
       <div>
-      <button className="formBtn" id="success" disabled>
-        <span className={`glyphicon glyphicon-ok`} /> Sent
-      </button>
-      <FormAlert status="light"/>
+        <button className="formBtn" id="success" disabled>
+          <span className={`glyphicon glyphicon-ok`} /> Sent
+        </button>
+        <FormAlert status="light" />
       </div>
     );
   }
@@ -24,10 +24,8 @@ export default class FormButton extends Component {
   errorBtn() {
     return (
       <div>
-      <button className="formBtn">
-        REQUEST FORMS
-      </button>
-      <FormAlert status="error"/>
+        <button className="formBtn">REQUEST FORMS</button>
+        <FormAlert status="error" />
       </div>
     );
   }
@@ -36,7 +34,11 @@ export default class FormButton extends Component {
     if (this.props.validated) {
       return <button className="formBtn">REQUEST FORMS</button>;
     } else {
-      return <button className="formBtn" disabled>REQUEST FORMS</button>;
+      return (
+        <button className="formBtn" disabled>
+          REQUEST FORMS
+        </button>
+      );
     }
   }
 
@@ -45,7 +47,7 @@ export default class FormButton extends Component {
       return this.loadingBtn();
     } else if (this.props.sentStatus === "success") {
       return this.successBtn();
-    } else if (this.props.sentStatus === "error"){
+    } else if (this.props.sentStatus === "error") {
       return this.errorBtn();
     } else {
       return this.unsentBtn();
@@ -55,8 +57,9 @@ export default class FormButton extends Component {
   render() {
     return (
       <div>
-    {this.decideWhichBtn()}
-    {this.props.validated ? null: <FormAlert status="warning"/>}
-    </div>);
+        {this.decideWhichBtn()}
+        {this.props.validated ? null : <FormAlert status="warning" />}
+      </div>
+    );
   }
 }

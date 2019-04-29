@@ -23,7 +23,7 @@ export default class Forms extends Component {
       iCKids: false
     },
     loading: false,
-    sentStatus: 'unsent'
+    sentStatus: "unsent"
   };
 
   populateFormList() {
@@ -73,21 +73,23 @@ export default class Forms extends Component {
     });
   };
 
-  formatRequest(){
+  formatRequest() {
     let data = this.state;
-    data.formString = '';
-    let forms = (Object.keys(this.state.forms).filter(form=> this.state.forms[form]=== true))
-    forms.forEach(abbreviation =>
-      data.formString = data.formString + ', ' + formNames[abbreviation] 
+    data.formString = "";
+    let forms = Object.keys(this.state.forms).filter(
+      form => this.state.forms[form] === true
     );
-    data.formString = data.formString.slice(2)
+    forms.forEach(
+      abbreviation =>
+        (data.formString = data.formString + ", " + formNames[abbreviation])
+    );
+    data.formString = data.formString.slice(2);
     return data;
   }
 
-
   sendEmail = e => {
     e.preventDefault();
-    this.setState({loading: true})
+    this.setState({ loading: true });
 
     let data = this.formatRequest();
     fetch("https://us-central1-edelstein-4e6a1.cloudfunctions.net/sendEmail", {
@@ -98,18 +100,19 @@ export default class Forms extends Component {
       },
       body: JSON.stringify(data)
     }).then(resp => {
-      if (resp.status === 200){
+      if (resp.status === 200) {
         this.setState({
-          sentStatus: 'success',
+          sentStatus: "success",
           loading: false
-        })
-      } else { 
+        });
+      } else {
         this.setState({
-          sentStatus: 'error',
-          loading: false})
-        }
+          sentStatus: "error",
+          loading: false
+        });
+      }
     });
-  }
+  };
 
   render() {
     return (
@@ -118,26 +121,26 @@ export default class Forms extends Component {
           <Form.Group as={Row} controlId="name">
             <Form.Label>Your Name</Form.Label>
             <Col xs="12" sm="8">
-            <Form.Control
-            size="lg"
-              type="text"
-              placeholder="Enter your full name"
-              onChange={this.handleChange}
-              value={this.state.name}
-            />
+              <Form.Control
+                size="lg"
+                type="text"
+                placeholder="Enter your full name"
+                onChange={this.handleChange}
+                value={this.state.name}
+              />
             </Col>
           </Form.Group>
 
           <Form.Group as={Row} controlId="email">
             <Form.Label>Email address</Form.Label>
             <Col xs="12" sm="8">
-            <Form.Control
-            size="lg"
-              type="email"
-              placeholder="Enter email"
-              onChange={this.handleChange}
-              value={this.state.email}
-            />
+              <Form.Control
+                size="lg"
+                type="email"
+                placeholder="Enter email"
+                onChange={this.handleChange}
+                value={this.state.email}
+              />
             </Col>
           </Form.Group>
 
@@ -158,11 +161,10 @@ export default class Forms extends Component {
           {this.populateFormList()}
 
           <FormButton
-          loading={this.state.loading}
-          sentStatus={this.state.sentStatus}
-          validated={(this.state.name && this.state.email)? true:false}
-          /> 
-
+            loading={this.state.loading}
+            sentStatus={this.state.sentStatus}
+            validated={this.state.name && this.state.email ? true : false}
+          />
         </Form>
       </div>
     );
