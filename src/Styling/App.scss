@@ -1,7 +1,6 @@
-// css bugs to fix
-// - home title 
-// -authorization to release info form on mobile
-// -education credentials
+// bugs to fix
+// - add education credentials somewhere
+// - symbols on tabs use @media
 
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
 
@@ -36,14 +35,12 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     width: max-content;
-    border-radius: 10px;
   }
 }
 
 // HOME BUTTONS
 .homeBtn {
   color:  #353535 !important;
-  border-radius: 10px;
   padding: 12px;
   border: 1px solid #353535;;
   background-color: rgba(255, 255, 255, 0.6);
@@ -121,36 +118,31 @@ a.nav-link {
   padding-bottom: 2rem;
   border: none;
 }
-.nav-tabs .nav-link.active:hover {
-  background-color: #fff;
-  border: none;
-}
 
-.nav-tabs .nav-link.active {
-border: none;
-}
-
-.nav-tabs .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+.nav-link{
   border: none;
+  font-size: 18px;
+  &.active{
+    border: none;
+    &:hover{
+      background-color: #fff;
+      border: none;
+    }
+  }
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;  
+  }
+  a{
+    color: #35353596;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border: none;
+  }
 }
 
 .nav-tabs {
   border: none;
-  font-size: 18px;
-  &.nav-link{
-    &active{
-      border: none;
-      &:hover{
-        background-color: rgba(255, 255, 255, 0.7);
-        border: none;
-      }
-    }
-    :hover{
-
-    }
-  }
-
 }
 
 #actionTabs{
@@ -316,13 +308,9 @@ strong {
 }
 #form {
   background-color: rgba(255, 255, 255, 0.7);
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 7px 20px;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 15px;
   p {
     font-size: 17px;
@@ -332,6 +320,10 @@ strong {
     top: 50%;
     transform: translateY(50%);
   }
+}
+
+label.form-check-label{
+  text-align: left;
 }
 
 .col-sm-4 {
