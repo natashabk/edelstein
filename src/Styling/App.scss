@@ -61,6 +61,38 @@
   }
 }
 
+// ACTION & MAIN TABS
+
+a.nav-link{
+  font-size: 18px;
+  color: #35353596;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  &.active{
+    border: 0px;
+    &:hover{
+      background-color: #fff;
+      border: 0px;
+    }
+  }
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0px;  
+  }
+}
+
+.nav-tabs {
+  border: 0px;
+  .nav-link{
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
+
 // MAIN 
 
 #rightCol {
@@ -105,71 +137,9 @@
   height: 93%;
 }
 
-
-
 #welcomeRow {
   margin-right: 0;
   margin-left: 0;
-}
-
-a.nav-link {
-  color: #35353596;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  border: none;
-}
-
-.nav-link{
-  border: none;
-  font-size: 18px;
-  &.active{
-    border: none;
-    &:hover{
-      background-color: #fff;
-      border: none;
-    }
-  }
-  &:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;  
-  }
-  a{
-    color: #35353596;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  border: none;
-  }
-}
-
-.nav-tabs {
-  border: none;
-}
-
-#actionTabs{
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
-// INTRO
-
-#introText {
-  font-size: 17px;
-  max-width: 620px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#officeRow {
-  height: 40%;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 35px;
-}
-
-img#officeImg {
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 // SPECIALIITIES
@@ -180,15 +150,6 @@ ul {
 }
 strong {
   line-height: 40px;
-}
-
-#specialitiesText {
-  max-width: 620px;
-  margin-left: auto;
-  margin-right: auto;
-  &.aboutRow {
-    padding-bottom: 20px;
-  }
 }
 
 // PAGINATION
