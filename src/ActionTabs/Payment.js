@@ -8,7 +8,7 @@ export default class Payment extends Component {
           <strong>Avg. Cost Per Session:</strong>
         </li>
         <li className="white" id="bottom">
-          $200 (sliding scale available)
+          $210 (sliding scale available)
         </li>
         <br />
         <Row className="payment row">
