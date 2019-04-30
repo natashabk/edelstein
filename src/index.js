@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./Styling/index.scss";
+import "./Styling/Main.scss";
+import "./Styling/Action.scss";
+import "./Styling/Form.scss";
+import "./Styling/Home.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 

@@ -4,10 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
 
+// WHOLE APP
 .App {
   text-align: center;
 }
-
 .bg {
   background-position: center;
   background-size: cover;
@@ -15,339 +15,42 @@
   padding: 30px;
   padding-top: 75px;
   &#home {
-    background-image: url("../Images/grass.jpeg")
+    background-image: url("../Images/grass.jpeg");
   }
   &#welcome {
     background-image: url("https://i.imgur.com/IuetL5w.jpg");
   }
   &#booking {
-    background-image: url("../Images/blue-yellow-plants.jpeg")
+    background-image: url("../Images/blue-yellow-plants.jpeg");
   }
 }
 
-// HOME TITLE
-#homeTitle {
-  margin-top: 200px;
-  h1 {
-    font-family: "Rubik", sans-serif;
-    color: #353535;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    width: max-content;
-  }
-}
-
-// HOME BUTTONS
-.homeBtn {
-  color:  #353535 !important;
-  padding: 12px;
-  border: 1px solid #353535;;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-size: 19px;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: max-content;
-  min-width: 10em;
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  &:hover {
-    background-color: #fff;
-  }
-  &#topHomeBtn {
-    margin-top: 65px;
-  }
-}
-
-// ACTION & MAIN TABS
-
-a.nav-link{
+// BOTH TAB GROUPS
+a.nav-link {
   font-size: 18px;
-  color: #35353596;
+  color: var(--dark-grey-transparent);
   padding: 1rem;
   padding-bottom: 2rem;
   border: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  &.active{
+  &.active {
     border: 0px;
-    &:hover{
+    &:hover {
       background-color: #fff;
       border: 0px;
     }
   }
-  &:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 0px;  
+  &:hover {
+    background-color: var(--overlay-7);
+    border: 0px;
   }
 }
-
 .nav-tabs {
   border: 0px;
-  .nav-link{
+  .nav-link {
     border: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
   }
-}
-
-// MAIN 
-
-#rightCol {
-  background-color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-  max-width: 600px;
-  height: 650px;
-  overflow: scroll;
-  padding: 0;
-}
-
-.welcomeTitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-  padding-right: 35px;
-  padding-left: 35px;
-}
-
-.pBlock {
-  text-align: left;
-  padding-left: 35px;
-  padding-right: 35px;
-  br {
-    line-height: 3;
-  }
-}
-
-.tabWrapper {
-  max-height: 575px;
-  overflow: scroll;
-}
-
-// ACTION
-
-#overlay {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #353535;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 93%;
-}
-
-#welcomeRow {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-// SPECIALIITIES
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-strong {
-  line-height: 40px;
-}
-
-// PAGINATION
-.pagination {
-  &Back {
-    border: none;
-    font-size: 20px;
-    margin-top: 340px;
-    margin-right: 665px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-}
-
-// BOOKING
-.squareWidget {
-  width: 100%;
-  height: 100%;
-  border: 1px solid transparent;
-}
-
-.squareWrapper {
-  width: 100%;
-  max-width: 580px;
-  height: 32em;
-}
-
-.officeInfo {
-  background-color: rgba(255, 255, 255, 0.7);
-  min-height: 300px;
-  border: 1px solid grey;
-  margin-top: 20px;
-  margin-left: 30px;
-  width: 100%;
-  ul {
-    margin-top: 20px;
-    padding-inline-start: 0;
-  }
-}
-#officeInfoHead strong {
-  line-height: 30px;
-}
-
-#bookingTitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-// MAP
-
-.mapWrapper {
-  margin-top: 20px;
-  position: relative;
-  height: 25em;
-  width: 100%;
-}
-
-.officeMarker {
-  vertical-align: top;
-  border-style: none;
-  height: 100px;
-}
-
-#locationRow{
-  // flex-direction: column;
-  max-width: 100%;
-  margin-right:  0;
-  margin-left: 0;
-}
-
-#locationInfoText{
-  margin-top: 20px;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding-top: 10px;
-}
-// FORMS
-.formBtn {
-  border-radius: 6px;
-  padding: 7px 10px;
-  font-size: 15px;
-  font-weight: 900;
-  margin: 5px;
-  min-width: 13em;
-  text-align: center;
-  background-color: #2996cc;
-  color: #fff;
-  min-height: 42px;
-  height: auto;
-  line-height: 1.5;
-  border: none;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
-  &[disabled]{
-    background-color: #fff;
-    color: #9b9999;
-    &#loading{
-      background-color: #4ba6d4;
-      color: #fff;
-    }
-    &#success{
-      background-color: #2996cc;
-      color: #fff;
-    }
-  }
-
-  &:not(:disabled):hover {
-    color: #fff !important;
-    background-color: #4ba6d4 !important;
-  }
-}
-#form {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 7px 20px;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 15px;
-  p {
-    font-size: 17px;
-    color: #353535;
-    display: table-cell;
-    position: relative;
-    top: 50%;
-    transform: translateY(50%);
-  }
-}
-
-label.form-check-label{
-  text-align: left;
-}
-
-.col-sm-4 {
-  text-align: right;
-}
-
-// PAYMENT
-.payment {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  &.row {
-    padding-top: 0px;
-  }
-}
-#paymentCol {
-  text-align: left;
-}
-
-#middleCol{
-  height: 650px;
-  overflow: scroll;
-}
-
-.actionTabWrapper{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  overflow: scroll;
-}
-
-.table td, .table th {
-    padding: 1.75rem;
-    margin: 10px;
-    vertical-align: top;
-    border: 1px solid #9b9999;
-    /* border-top: 14px solid transparent; */
-    text-align: left;
-}
-.table{
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.7);
-  width: fit-content;
-  padding-top: 20px;
-}
-
-#formsNote{
-  padding: 10px;
-  color: #353535d9;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-li.white{
-  background-color: rgba(255, 255, 255, 0.7);
-  &#officeInfoHead{
-    padding-top: 10px;
-  }
-  &#bottom{
-    padding-bottom: 10px;
-  }
-}
-
-#formsWrapper{
-  padding: 10px 40px;
 }
