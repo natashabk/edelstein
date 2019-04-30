@@ -13,8 +13,7 @@ const symbols = {
 
 export default class Action extends Component {
   getResponsiveTabTitle(tab) {
-    let span = <span className={`glyphicon glyphicon-${symbols[tab]}`} />;
-    return window.innerWidth <= 375 ? span : tab;
+    return  <p><span className="actionTabText">{tab}</span><span id="actionTabIcon" className={`glyphicon glyphicon-${symbols[tab]}`}/></p>;
   }
 
   render() {
