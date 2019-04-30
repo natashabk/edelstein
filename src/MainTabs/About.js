@@ -21,7 +21,12 @@ export default class About extends Component {
           Even when we provide our children with unconditional love and do our
           best to understand and support them, problems can arise that cause us
           to doubt our parenting. With almost thirty years of experience working
-          with children with emotional and behavioral issues, I can help.
+          with children with emotional and behavioral issues, I can help.<br/>
+        <ul id="educationList">
+          <li>PhD  <strong>Wright Institute</strong> 1992</li>
+          <li>MA{" "}  <strong>Wright Institute</strong> 1990</li>
+          <li>BA{" "}  <strong>Antioch University</strong> 1984</li>
+        </ul>
         </p>
       </div>
     );
