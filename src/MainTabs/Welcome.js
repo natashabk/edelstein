@@ -20,6 +20,15 @@ export default class Welcome extends Component {
           Using evidence based treatment, specifically tailored to your needs,
           we can work together to identify ways to overcome whatever obstacles
           you’re facing.
+          <br />
+          <strong>Modalities of Treatment:</strong>
+          <ul id="educationList">
+            <li>Cognitive Behavioral Therapy</li>
+            <li>Emotionally Focused Therapy</li>
+            <li>Psychodynamic</li>
+            <li>Humanistic</li>
+            <li>Attachment-Based</li>
+          </ul>
         </p>
       </div>
     );

@@ -26,7 +26,7 @@ export default class Home extends Component {
             smooth={true}
             duration={800}
           >
-            Current patients
+            Book now
           </Link>
         </div>
       </div>

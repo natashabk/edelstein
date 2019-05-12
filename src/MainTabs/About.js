@@ -23,30 +23,13 @@ export default class About extends Component {
           transitions including grief and bereavement, body image and eating
           disorders, and stress management.
           <br />
-          {"  "}Couples most often come to meet with me when they are having conflict
-          over and over with no resolution. Sometimes couples come in after
-          there has been infidelity, either to heal the relationship or separate
-          in a way that will still allow them to minimize the damage to their
-          children and co-parent .With children, I provide help in dealing with
-          fear, sadness, anxieties about the future,and bullying. Parents can
-          get help in positive discipline and dealing with oppositional
-          behaviors. We work together to understand how children think and feel
-          so that they feel understood and supported.
-          <br />
-          {"  "}Adolescence is a time of growth and change, both of which can be very
-          exciting and very stressful for everybody involved. Teenagers face
-          social stress, academic and college stress, issues of sexuality and
-          gender. Substance abuse, over reliance on social media, coping
-          strategies that include self harm can be turned in a positive
-          direction. Oppositional behavior and anger can be understood and
-          rechanneled.
-          <br />
           {"  "}With over twenty five years as a clinical psychologist , I still
           really enjoy my practice and my approach reflects my personal
           satisfaction. The work is endlessly fascinating and challenging and I
           consider it an honor be able to help people find their way back to
           joy. I welcome you to my practice.
           <br />
+          <strong>Education:</strong>
           <ul id="educationList">
             <li>
               PhD <strong>Wright Institute</strong> 1992
