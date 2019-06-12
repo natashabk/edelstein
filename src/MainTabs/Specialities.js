@@ -38,7 +38,8 @@ export default class Specialities extends Component {
                 <strong>Children </strong>
               </li>
               <li>Childhood Anxiety/Depression</li>
-              <li>Oppositional Behavior Affect Dysregulation</li>
+              <li>Oppositional Behavior</li>
+              <li>Affect Dysregulation</li>
               <li>Parental Separation/Divorce </li>
               <li>
                 <strong>Adolescents </strong>

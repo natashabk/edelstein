@@ -34,6 +34,7 @@ export default class Payment extends Component {
             <li className="white">Great-West Life</li>
             <li className="white">Health Net</li>
             <li className="white">MHN</li>
+            <li className="white">Medicare</li>
             <li className="white" id="bottom">
               Out of Network Providers
             </li>

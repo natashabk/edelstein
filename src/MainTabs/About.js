@@ -41,6 +41,9 @@ export default class About extends Component {
               BA <strong>Antioch University</strong> 1984
             </li>
           </ul>
+          <ul>
+            <li>License <strong>#PSY14535</strong></li>
+          </ul>
         </p>
       </div>
     );

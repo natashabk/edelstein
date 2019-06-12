@@ -1,13 +1,19 @@
 // TITLE
 #homeTitle {
   margin-top: 165px;
-  h1 {
-    font-family: "Rubik", sans-serif;
+  &_wrapper{
+    background-color: var(--overlay-7);
     color: var(--dark-grey);
     margin: auto;
-    background-color: var(--overlay-7);
-    padding: 20px;
     width: max-content;
+    padding: 20px;
+    h2{
+      font-size: 1.6rem;
+      margin-top: 0.5rem;
+    }
+    h3{
+      font-size: 1.3rem;
+    }
   }
 }
 
