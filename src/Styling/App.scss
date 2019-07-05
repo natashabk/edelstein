@@ -58,6 +58,10 @@ a.nav-link {
   display: none;
 }
 
+.tab-content{
+  max-width: 100%;
+}
+
 @media screen and (max-width: 375px) {
   .actionTabText {
     display: none;
