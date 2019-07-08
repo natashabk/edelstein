@@ -59,9 +59,9 @@ a.nav-link {
   display: none;
 }
 
-.tab-content{
-  max-width: 100%;
-}
+// .tab-content{
+//   max-width: 100%;
+// }
 
 @media screen and (max-width: 375px) {
   .actionTabText {
@@ -75,7 +75,7 @@ a.nav-link {
   }
   .actionTabWrapper {
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 20px;
   }
   #specialitiesText{
     flex-direction: column;

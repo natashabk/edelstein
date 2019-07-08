@@ -4,7 +4,7 @@
   margin: 0;
   max-width: 600px;
   height: 650px;
-  overflow: auto;
+  overflow: scroll;
   padding: 0;
 }
 .welcomeTitle {
@@ -24,6 +24,7 @@
 }
 .tabWrapper {
   max-height: 575px;
+  overflow: scroll;
 }
 
 // SPECIALITIES
