@@ -7,22 +7,12 @@
 	padding-left: 15px;
 }
 #overlay {
-<<<<<<< HEAD
 	background-color: var(--overlay-7);
 	color: var(--dark-grey);
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	overflow: auto;
-=======
-  background-color: var(--overlay-7);
-  color: var(--dark-grey);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: scroll;
->>>>>>> 7de0a03074bc0af618537c0588a4e4ff34742a0e
 }
 .actionTabWrapper {
 	padding-left: 20px;
@@ -37,17 +27,10 @@
 	border: 1px solid transparent;
 }
 .squareWrapper {
-<<<<<<< HEAD
 	width: 100%;
 	max-width: 580px;
 	background-color: var(--overlay-7);
 	padding-top: 10px;
-=======
-  width: 100%;
-  max-width: 580px;
-  height: 32em;
-  // overflow: auto;
->>>>>>> 7de0a03074bc0af618537c0588a4e4ff34742a0e
 }
 
 // LOCATION TEXT
