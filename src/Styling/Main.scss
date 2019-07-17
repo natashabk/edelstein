@@ -1,45 +1,46 @@
-// MAIN 
+// MAIN
 #rightCol {
-  background-color: var(--overlay-7);
-  margin: 0;
-  max-width: 600px;
-  height: 650px;
-  overflow: auto;
-  padding: 0;
+	background-color: var(--overlay-7);
+	margin: 0;
+	max-width: 600px;
+	height: 650px;
+	overflow: auto;
+	padding: 0;
 }
 .welcomeTitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-  padding-right: 35px;
-  padding-left: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	padding-right: 35px;
+	padding-left: 35px;
 }
 .pBlock {
-  text-align: left;
-  padding-left: 35px;
-  padding-right: 35px;
-  br {
-    line-height: 3;
-  }
+	text-align: left;
+	padding-left: 35px;
+	padding-right: 35px;
+	br {
+		line-height: 3;
+	}
 }
 .tabWrapper {
-  max-height: 575px;
+	max-height: 575px;
+	max-width: 97%;
 }
 
 // SPECIALITIES
 
 ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 strong {
-  line-height: 40px;
+	line-height: 40px;
 }
 
 // ABOUT
-#educationList{
-  strong{
-    line-height: 1px;
-    padding:0px 10px;
-  }
+#educationList {
+	strong {
+		line-height: 1px;
+		padding: 0px 10px;
+	}
 }

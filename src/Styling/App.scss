@@ -2,85 +2,96 @@
 
 // WHOLE APP
 .App {
-  text-align: center;
-  overflow:auto;
+	text-align: center;
+	overflow: auto;
 }
 .bg {
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  padding: 30px;
-  padding-top: 75px;
-  &#home {
-    background-image: url("../Images/grass.jpeg");
-  }
-  &#welcome {
-    background-image: url("https://i.imgur.com/IuetL5w.jpg");
-  }
-  &#booking {
-    background-image: url("../Images/blue-yellow-plants.jpeg");
-  }
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 30px;
+	padding-top: 75px;
+	&#home {
+		background-image: url("../Images/grass.jpeg");
+	}
+	&#welcome {
+		background-image: url("https://i.imgur.com/IuetL5w.jpg");
+	}
+	&#booking {
+		background-image: url("../Images/blue-yellow-plants.jpeg");
+	}
 }
 
 // BOTH TAB GROUPS
 a.nav-link {
-  font-size: 18px;
-  color: var(--dark-grey-transparent);
-  padding: 1rem;
-  padding-bottom: 2rem;
-  border: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  &.active {
-    border: 0px;
-    &:hover {
-      background-color: #fff;
-      border: 0px;
-    }
-  }
-  &:hover {
-    background-color: var(--overlay-7);
-    border: 0px;
-  }
+	font-size: 18px;
+	color: var(--dark-grey-transparent);
+	padding: 1rem;
+	padding-bottom: 2rem;
+	border: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	&.active {
+		border: 0px;
+		&:hover {
+			background-color: #fff;
+			border: 0px;
+		}
+	}
+	&:hover {
+		background-color: var(--overlay-7);
+		border: 0px;
+	}
 }
 .nav-tabs {
-  border: 0px;
-  .nav-link {
-    border: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-  }
+	border: 0px;
+	.nav-link {
+		border: 0px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
 }
 
 .actionTabText {
-  display: inline;
+	display: inline;
 }
 #actionTabIcon {
-  display: none;
+	display: none;
 }
 
-.tab-content{
-  max-width: 100%;
+.tab-content {
+	max-width: 100%;
 }
 
-@media screen and (max-width: 375px) {
-  .actionTabText {
-    display: none;
-  }
-  #actionTabIcon {
-    display: inline;
-  }
-  .bg#booking{
-    padding: 30px 6px;
-  }
-  .actionTabWrapper {
-    padding-left: 20px;
-    padding-right: 40px;
-  }
-  #specialitiesText{
-    flex-direction: column;
-  }
-  #homeTitle {
-    margin-top: 85px;
-  }
+@media screen and (max-width: 420px) {
+	.actionTabText {
+		display: none;
+	}
+	#actionTabIcon {
+		display: inline;
+	}
+	.bg#booking {
+		padding: 30px 6px;
+	}
+	.actionTabWrapper {
+		padding-left: 20px;
+		padding-right: 40px;
+	}
+	#specialitiesText {
+		flex-direction: column;
+	}
+	#homeTitle {
+		margin-top: 85px;
+	}
+	#middleCol {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 900px) {
+	#directSquare {
+		display: none;
+	}
+	.squareWrapper {
+		padding-top: 0;
+	}
 }

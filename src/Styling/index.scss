@@ -2,26 +2,26 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  h1 {
-    font-family: "Rubik", sans-serif;
-    margin: 0;
-    font-size: 30px;
-    font-weight: lighter;
-  }
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	h1 {
+		font-family: "Rubik", sans-serif;
+		margin: 0;
+		font-size: 30px;
+		font-weight: lighter;
+	}
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 
 #root {
-  --overlay-7: rgba(255, 255, 255, 0.7);
-  --dark-grey-transparent: #35353596;
-  --dark-grey: #353535;
+	--overlay-7: rgba(255, 255, 255, 0.7);
+	--dark-grey-transparent: #35353596;
+	--dark-grey: #353535;
 }
