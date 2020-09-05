@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "braces": "^2.3.2",
     "dot-prop": "^4.2.1",
     "google-maps-react": "^2.0.2",
-    "minimist": "^0.2.1",
+    "minimist": "^1.2.5",
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.6",
