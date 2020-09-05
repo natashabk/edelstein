@@ -42,6 +42,7 @@ export default class Action extends Component {
 												target="_blank"
 												href="https://square.site/book/C0H1E7DZ26ZEZ/susan-edelstein-phd-san-rafael-ca"
 												id="directSquare"
+												rel="noopener noreferrer"
 											>
 												Having trouble booking on a mobile device?
 											</a>
