@@ -12,8 +12,8 @@ export default class About extends Component {
           people who come to see me. I work very hard to understand what brings
           each individual to me, helping to identify the beliefs that we
           developed through our experiences growing up and the coping strategies
-          that we develop in order to feel safe. 
-          <br/>
+          that we develop in order to feel safe.
+          <br />
           {"  "}Sometimes those strategies have
           been very helpful in getting us to the present and sometimes those
           strategies no longer are adaptive in helping us accomplish our goals.
@@ -40,9 +40,6 @@ export default class About extends Component {
             <li>
               BA <strong>Antioch University</strong> 1984
             </li>
-          </ul>
-          <ul>
-            <li>License <strong>#PSY14535</strong></li>
           </ul>
         </p>
       </div>

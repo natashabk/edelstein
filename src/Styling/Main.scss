@@ -44,3 +44,17 @@ strong {
 		padding: 0px 10px;
 	}
 }
+
+// PAYMENT
+li.white {
+  margin-left: 35px;
+  max-width: 85%;
+	background-color: var(--overlay-7);
+	&#officeInfoHead {
+		padding-top: 10px;
+	}
+	&#bottom {
+		padding-bottom: 10px;
+	}
+}
+

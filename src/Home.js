@@ -7,9 +7,9 @@ export default class Home extends Component {
       <div className="bg" id="home">
         <div id="homeTitle">
           <div id="homeTitle_wrapper">
-          <h1>Susan Edelstein, PhD</h1>
-          <h2>Licensed Clinincal Psychologist</h2>
-          <h3>#PSY14535</h3>
+            <h1>Susan Edelstein, PhD</h1>
+            <h2>Licensed Clinincal Psychologist</h2>
+            <h3>#PSY14535</h3>
           </div>
           <Link
             className="homeBtn"
@@ -22,16 +22,19 @@ export default class Home extends Component {
           >
             Learn more
           </Link>
-          <Link
-            className="homeBtn"
-            activeClass="active"
-            to="booking"
-            spy={true}
-            smooth={true}
-            duration={800}
+          <a
+            href="https://susan-edelstein.clientsecure.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-spwidget-scope-id={`${ process.env.REACT_APP_WIDGET_SCOPE_ID }`}
+            data-spwidget-scope-uri="susan-edelstein"
+            data-spwidget-application-id={`${ process.env.REACT_APP_WIDGET_APP_ID }`}
+            data-spwidget-scope-global
+            data-spwidget-autobind
+            style={{ textDecoration: 'none' }}
           >
-            Book now
-          </Link>
+            <div className="homeBtn">Book now</div>
+          </a>
         </div>
       </div>
     );
