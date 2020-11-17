@@ -33,8 +33,9 @@ export default class Home extends Component {
             data-spwidget-autobind
             style={{ textDecoration: 'none' }}
           >
-            <div className="homeBtn">Book now</div>
+            <div className="homeBtn">Book now*</div>
           </a>
+          <div className="notice">* You will be redirected to the Simple Practice booking service, where you can create an account and schedule an appointment with me.</div>
         </div>
       </div>
     );

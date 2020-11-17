@@ -19,9 +19,15 @@
 	}
 }
 
+.notice {
+  color: white;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
 // BOTH TAB GROUPS
 a.nav-link {
-	font-size: 18px;
+	font-size: 1em;
 	color: var(--dark-grey-transparent);
 	padding: 1rem;
 	padding-bottom: 2rem;
@@ -82,7 +88,7 @@ a.nav-link {
 	}
 	#middleCol {
 		width: 100%;
-	}
+  }
 }
 @media screen and (min-width: 900px) {
 	#directSquare {

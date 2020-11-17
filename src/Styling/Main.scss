@@ -58,3 +58,11 @@ li.white {
 	}
 }
 
+@media screen and (max-width: 420px) {
+  .bg#welcome{
+    padding: 20px;
+  }
+  #rightCol{
+    max-height: 550px;
+  }
+}
