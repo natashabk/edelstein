@@ -40,9 +40,9 @@ export default class Specialities extends Component {
         <br /><br />
         </p>
         <p className="pBlock" style={{ textAlign: 'center' }}>
-          <strong style={{ lineHeight: '25px' }}>☎ (415)302-2246</strong>
+          <strong style={{ lineHeight: '25px' }}>☎  (415) 302-2246</strong>
           <br />
-          <strong style={{ lineHeight: '25px' }}>✎ drsusanedelstein@gmail.com</strong>
+          <strong style={{ lineHeight: '25px' }}>✎  drsusanedelstein@gmail.com</strong>
         </p>
       </div>
     );
