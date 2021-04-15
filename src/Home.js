@@ -8,7 +8,7 @@ export default class Home extends Component {
         <div id="homeTitle">
           <div id="homeTitle_wrapper">
             <h1>Susan Edelstein, PhD</h1>
-            <h2>Licensed Clinincal Psychologist</h2>
+            <h2>Licensed Clinical Psychologist</h2>
             <h3>#PSY14535</h3>
           </div>
           <Link
