@@ -29,7 +29,7 @@
     "serialize-javascript": "^6.0.0",
     "sockjs": "^0.3.20",
     "ssri": "^6.0.2",
-    "trim-newlines": "4.0.2",
+    "trim-newlines": "3.0.1",
     "ws": "^6.2.2",
     "y18n": "^4.0.1",
     "yargs-parser": "^15.0.1"
