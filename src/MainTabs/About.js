@@ -4,7 +4,7 @@ export default class About extends Component {
     return (
       <div className="tabWrapper">
         <h1 className="welcomeTitle">About Me</h1>
-        <p className="pBlock">
+        <div className="pBlock">
           {"  "}I provide psychotherapy and consultation for individuals, couples and
           families. My work is collaborative and relational. It is important to
           me that I provide a warm and inviting safe space to address anything
@@ -41,7 +41,7 @@ export default class About extends Component {
               BA <strong>Antioch University</strong> 1984
             </li>
           </ul>
-        </p>
+        </div>
       </div>
     );
   }
