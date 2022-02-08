@@ -37,7 +37,7 @@ export default class Main extends Component {
             data-spwidget-application-id={`${ process.env.REACT_APP_WIDGET_APP_ID }`}
             data-spwidget-scope-global
             data-spwidget-autobind
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: 'none', width: 'unset' }}
           >
             <div className="homeBtn">Book appointment →</div>
           </a>
