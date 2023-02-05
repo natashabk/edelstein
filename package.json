@@ -13,6 +13,10 @@
     "react-scroll": "^1.7.11",
     "sass": "^1.49.7"
   },
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
